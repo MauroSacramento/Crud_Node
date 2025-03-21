@@ -13,5 +13,9 @@ module.exports = {
         const person = await Person.create(data);
 
         return res.status(201).json({person, msg: "Usuário criado com sucesso"});
+    },
+
+    async index(req, res) {
+        return res.send("Wonderful");
     }
 }
