@@ -1,15 +1,10 @@
 const mongoose = require('mongoose');
 
 const personSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    salary: {
-        type: Number,
-        required: true
-    },
-    approved: Boolean
+    name: String,
+    email: String,
+    password: String,
+    confirmPassword: String
 });
 
 

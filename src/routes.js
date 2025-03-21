@@ -2,7 +2,7 @@ const routes = require('express').Router();
 const PersonController = require('./controllers/PersonController');
 
 
-routes.post("/users", PersonController.store);
+routes.post("/auth/register", PersonController.store);
 routes.get("/users", PersonController.index);
 
 

@@ -1,8 +1,11 @@
 require('dotenv').config()
 const express = require('express')
-const app = express()
 const mongoose = require('mongoose')
 const routes = require('./routes')
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+
+const app = express()
 
 // Import controllers
 const PersonController = require('./controllers/PersonController');
